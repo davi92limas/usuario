@@ -1,5 +1,6 @@
 package com.davi.usuario.business.dto;
 
+
 import lombok.*;
 
 @Getter

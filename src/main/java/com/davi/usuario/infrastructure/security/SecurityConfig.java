@@ -1,4 +1,5 @@
-package com.javanauta.usuario.infrastructure.security;
+package com.davi.usuario.infrastructure.security;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -22,12 +23,12 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfig {
 
     // Instâncias de JwtUtil e UserDetailsService injetadas pelo Spring
-    private final JwtUtil jwtUtil;
+    private final com.davi.usuario.infrastructure.security.JwtUtil jwtUtil;
     private final UserDetailsService userDetailsService;
 
     // Construtor para injeção de dependências de JwtUtil e UserDetailsService
     @Autowired
-    public SecurityConfig(JwtUtil jwtUtil, UserDetailsService userDetailsService) {
+    public SecurityConfig(com.davi.usuario.infrastructure.security.JwtUtil jwtUtil, UserDetailsService userDetailsService) {
         this.jwtUtil = jwtUtil;
         this.userDetailsService = userDetailsService;
     }

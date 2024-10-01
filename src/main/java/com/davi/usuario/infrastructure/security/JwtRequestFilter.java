@@ -1,4 +1,5 @@
-package com.javanauta.usuario.infrastructure.security;
+package com.davi.usuario.infrastructure.security;
+
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -16,11 +17,11 @@ import java.io.IOException;
 public class JwtRequestFilter extends OncePerRequestFilter {
 
     // Define propriedades para armazenar instâncias de JwtUtil e UserDetailsService
-    private final JwtUtil jwtUtil;
+    private final com.davi.usuario.infrastructure.security.JwtUtil jwtUtil;
     private final UserDetailsService userDetailsService;
 
     // Construtor que inicializa as propriedades com instâncias fornecidas
-    public JwtRequestFilter(JwtUtil jwtUtil, UserDetailsService userDetailsService) {
+    public JwtRequestFilter(com.davi.usuario.infrastructure.security.JwtUtil jwtUtil, UserDetailsService userDetailsService) {
         this.jwtUtil = jwtUtil;
         this.userDetailsService = userDetailsService;
     }

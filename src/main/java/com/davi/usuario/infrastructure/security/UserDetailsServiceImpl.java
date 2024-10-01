@@ -1,4 +1,4 @@
-package com.javanauta.usuario.infrastructure.security;
+package com.davi.usuario.infrastructure.security;
 
 
 import com.davi.usuario.infrastructure.entity.Usuario;
