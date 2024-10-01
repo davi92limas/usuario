@@ -43,4 +43,5 @@ public class UsuarioController {
     public boolean verificaEmailExistente(String email){
         return usuarioRepository.existsByEmail(email);
     }
+
 }
