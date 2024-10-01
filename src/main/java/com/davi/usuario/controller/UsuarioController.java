@@ -44,4 +44,3 @@ public class UsuarioController {
         return usuarioRepository.existsByEmail(email);
     }
 }
-
