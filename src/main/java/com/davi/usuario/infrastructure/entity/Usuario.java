@@ -1,6 +1,5 @@
 package com.davi.usuario.infrastructure.entity;
 
-
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
