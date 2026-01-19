@@ -1,14 +1,15 @@
 package usuario.controller;
 
-import com.davi.usuario.business.UsuarioService;
-import com.davi.usuario.business.dto.UsuarioDTO;
-import com.davi.usuario.infrastructure.security.JwtUtil;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
+import usuario.business.UsuarioService;
+import usuario.business.dto.UsuarioDTO;
+import usuario.infrastructure.security.JwtUtil;
 
 import java.util.List;
 

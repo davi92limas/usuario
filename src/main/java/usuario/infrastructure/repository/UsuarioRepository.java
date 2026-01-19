@@ -1,10 +1,10 @@
 package usuario.infrastructure.repository;
 
 
-import com.davi.usuario.infrastructure.entity.Usuario;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+import usuario.infrastructure.entity.Usuario;
 
 import java.util.Optional;
 

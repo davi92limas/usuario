@@ -1,12 +1,13 @@
 package usuario.infrastructure.security;
 
-import com.davi.usuario.infrastructure.entity.Usuario;
-import com.davi.usuario.infrastructure.repository.UsuarioRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import usuario.infrastructure.entity.Usuario;
+import usuario.infrastructure.repository.UsuarioRepository;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
