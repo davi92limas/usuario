@@ -12,12 +12,12 @@ import lombok.*;
 @Table(name = "telefone")
 @Builder
 public class Telefone {
-  
-  @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Long id;
-  @Column(name = "ddd", length = 3)
-  private String ddd;
-  @Column(name = "numero", length = 15)
-  private String numero;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column(name = "ddd", length = 3)
+    private String ddd;
+    @Column(name = "numero", length = 15)
+    private String numero;
 }
